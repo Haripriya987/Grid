@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: 100px 100px ;
+            grid-auto-rows: 50px;
+
+            gap:10px;
+
+        }
+        .container>div{
+            background-color: gray;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ch one">1</div>
+        <div class="ch two">2</div>
+        <div class="ch three">3</div>
+        <div class="ch four">4</div>
+        <div class="ch five">5</div>
+        <div class="ch six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="seven">9</div>
+        <div class="eight">10</div>
+
+    </div>
+</body>
+</html>
